@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Mind Reader</title>
+
+    <link
+        rel="stylesheet"
+        href="../style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- BACKGROUND -->
+
+    <div class="background">
+
+        <div class="orb orb-1"></div>
+
+        <div class="orb orb-2"></div>
+
+        <div class="grid"></div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            PRATHIBIMBA<span>AI</span>
+
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="home.html">
+                Home
+            </a>
+
+            <a
+                href="mind-reader.html"
+                class="active"
+            >
+                Mind Reader
+            </a>
+
+            <a href="how-it-works.html">
+                How It Works
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MIND READER -->
+
+    <main class="mind-reader-page">
+
+
+        <div class="reader-header">
+
+            <div class="eyebrow">
+                ✦ AI ANALYSIS ACTIVE ✦
+            </div>
+
+            <h1>
+                What is your
+                <span>mind saying?</span>
+            </h1>
+
+            <p>
+                Let the AI study your expression
+                and reveal your reaction.
+            </p>
+
+        </div>
+
+
+        <!-- CAMERA -->
+
+        <section class="reader-container">
+
+
+            <div class="camera-card">
+
+
+                <video
+                    id="camera"
+                    autoplay
+                    playsinline
+                    muted
+                ></video>
+
+
+                <canvas id="overlay"></canvas>
+
+
+                <!-- START SCREEN -->
+
+                <div
+                    id="startScreen"
+                    class="start-screen"
+                >
+
+                    <div class="camera-icon">
+                        📷
+                    </div>
+
+
+                    <h2>
+                        Ready to read your mind?
+                    </h2>
+
+
+                    <p>
+                        Allow the camera and
+                        show your expression.
+                    </p>
+
+
+                    <button id="startButton">
+
+                        <span>
+                            🧠
+                        </span>
+
+                        Start Mind Reading
+
+                    </button>
+
+                </div>
+
+
+                <!-- COUNTDOWN -->
+
+                <div
+                    id="countdown"
+                    class="countdown hidden"
+                >
+
+                    <div
+                        id="countdownNumber"
+                        class="countdown-number"
+                    >
+                        5
+                    </div>
+
+
+                    <div class="countdown-label">
+                        AI ANALYZING
+                    </div>
+
+                </div>
+
+
+                <!-- STATUS -->
+
+                <div
+                    id="status"
+                    class="status hidden"
+                >
+                    🧠 AI is getting ready...
+                </div>
+
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <section
+                id="roastPanel"
+                class="roast-panel hidden"
+            >
+
+                <div
+                    id="expression"
+                    class="expression"
+                >
+                    🎯 Expression: —
+                </div>
+
+
+                <div
+                    id="roast"
+                    class="roast"
+                >
+                    😂 Your AI reading will appear here
+                </div>
+
+
+                <div class="hint">
+                    Change your expression for
+                    a new reading!
+                </div>
+
+            </section>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script
+        type="module"
+        src="../app.js"
+    ></script>
+
+
+</body>
+
+</html>
